@@ -28,7 +28,7 @@ function Movies() {
                 <ul className='movies__list'>
                 
                     {
-                        kinoDate?.filter((item)=> item.name.includes(search) || item.id == search   ).map((item , index)=> (
+                        kinoDate?.filter((item)=> item.name.toLowerCase().includes(search)|| item.id == search   ).map((item , index)=> (
                             <Link to={`/watching/${item.id}`}>
                                 <li ref={Liref} key={index}>
                                      <span>

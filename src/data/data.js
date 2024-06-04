@@ -4,7 +4,7 @@ export const kinoDate =[
         kinoId: 1,
         name: "Kino" ,
         img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScloOy2NnqnPp2-Oil2Z4pTTHl-OPvVXkNXqze6MzBYv4xouQz5dE6CgHH1Z4LFHnWV5w&usqp=CAU",
-        vidio:"",
+        vidio:"https://youtu.be/a44woszZIYs?si=gweg_Zr_mKPgVapG",
         url: '',
         yil: 1999,
         turi:"kino",
