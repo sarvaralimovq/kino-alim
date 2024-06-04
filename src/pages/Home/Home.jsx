@@ -1,9 +1,11 @@
 import React from 'react'
+import Movies from './Movies/Movies'
 
 function Home() {
   return (
-    <div>
-    
+    <div className='Home'>
+        
+        <Movies/>
     </div>
   )
 }

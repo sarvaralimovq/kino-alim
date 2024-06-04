@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useContext, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import { kinoDate } from '../../data/data'
 import logoNav from '../../img/logo/logonav.jpg'
+import { Context } from '../Context/Context'
 import './Header.scss'
 function Header() {
+    
+    const Ref = useRef()
+    const {search, setSearch} = useContext(Context)
+    
   return (
     <div className='Header'>
        <div className="container">
@@ -25,7 +31,7 @@ function Header() {
                         <Link >Kino</Link>
                     </li>
                     <li className='header__inp'>
-                        <input type="text" placeholder='IZLASH'/>
+                        <input onKeyUp={()=> setSearch(Ref.current.value)} ref={Ref} type="text" placeholder='IZLASH'/>
                     </li>
                     {/* <li>
 
